@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which Drug is worse?? "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which Drug do you think is more addictive?"
+        android:layout_below="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Button
+        android:theme="@style/AppTheme.Button"
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Drug A"
+        android:onClick="onClick"/>/>
+    <Button
+        android:theme="@style/blueButton"
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:text="Drug B"
+        android:onClick="onClick"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic2"
+        android:layout_marginTop="24dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/btn2"
+        android:layout_toEndOf="@+id/btn2" />
+    <TextView
+        android:textColor="@color/Red"
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_above="@+id/btn2"
+        android:layout_toStartOf="@+id/next" />
+    <TextView
+        android:textColor="@color/Red"
+        android:id="@+id/currentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="          "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_above="@+id/imageView"
+        android:layout_alignStart="@+id/result" />
+    <Button
+        android:theme="@style/cobaltButton"
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"/>/>
+</RelativeLayout>
