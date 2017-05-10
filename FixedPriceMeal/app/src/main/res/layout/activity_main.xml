@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.keene.fixedpricemeal.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/restaurant2"
+        android:layout_gravity="center"
+        android:id="@+id/imageView2" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your appetizer"
+        android:id="@+id/appetizerBtn"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your pasta course"
+        android:id="@+id/pastaBtn"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your meat/fish course"
+        android:id="@+id/meatBtn"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your dessert course"
+        android:id="@+id/dessertBtn"
+        android:onClick="onClick"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="19dp"
+        android:id="@+id/appetizerText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="19dp"
+        android:id="@+id/pastaText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="19dp"
+        android:id="@+id/meatText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="19dp"
+        android:id="@+id/dessertText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clear choices and start over"
+        android:id="@+id/clearBtn"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="place order"
+        android:id="@+id/confirmBtn"
+        android:onClick="onClick"/>
+
+</LinearLayout>
